@@ -1,0 +1,2 @@
+display_max=68.66647445678709
+percentile=98
