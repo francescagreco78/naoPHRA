@@ -34,7 +34,7 @@ def download(u,d):
     print(); part.replace(d)
 
 def files(folder,c):
-    rx=re.compile(rf"^{c.lower()}_(\d{{4}})_(\d{{2}})c?\.asc$",re.I)
+    rx=re.compile(rf"^{c.lower()}_(\d{{4}})_(\d{{2}})[cm]?\.asc$",re.I)
     z=[]
     for x in folder.rglob("*.asc"):
         m=rx.match(x.name)
